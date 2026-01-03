@@ -1,8 +1,10 @@
 
 def is_palindrome(s):
+    """This function checks if the given string is a palindrome"""
     return s == s[::-1]
 
 def get_user_input():
+    """This function gets user input and prints the result"""
     try :
         user_input = input("Enter a string: ")
         if is_palindrome(user_input):
