@@ -7,8 +7,8 @@ app = Flask(__name__,
 
 @app.get('/')
 def index():
-    return render_template('index.html')
+    context = {
+        "fullname": "Pedram Pourhakim"
+    }
+    return render_template('index.html',context= context)
 
-@app.get('/contact')
-def contact():
-    return "Contact Page"
